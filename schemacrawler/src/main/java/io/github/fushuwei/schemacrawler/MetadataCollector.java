@@ -22,9 +22,8 @@ public class MetadataCollector {
         String url = "jdbc:mysql://localhost:3306/nacos";
         try (Connection connection = DriverManager.getConnection(url, "root", "123456")) {
 
-            // 2. 配置SchemaCrawler选项（设置为maximum获取最全信息）
+            // 2. 配置SchemaCrawler选项
             SchemaCrawlerOptions options = SchemaCrawlerOptionsBuilder.newSchemaCrawlerOptions();
-                // .withSchemaInfoLevel(SchemaInfoLevelBuilder.maximum()).toOptions();
 
             // 3. 执行采集，获取Catalog对象（这是核心数据载体）
             DatabaseConnectionSource connectionSource = DatabaseConnectionSources.fromConnection(connection);
