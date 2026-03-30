@@ -1,0 +1,13 @@
+# datasource-service/src/main/resources/application.yml
+spring:
+  application:
+    name: datasource-service
+server:
+  port: 8080
+
+# 这里可以配置默认数据源参数，实际使用时可结合 Spring Cloud Config 或动态传参
+#datasource:
+#  type: mysql51
+#  url: jdbc:mysql://localhost:3306/testdb
+#  username: testuser
+#  password: testpass

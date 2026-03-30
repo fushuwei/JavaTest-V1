@@ -26,6 +26,7 @@
         <module>spring-data-jpa</module>
         <module>minio</module>
         <module>mvn-package-executable-jar</module>
+        <module>schemacrawler</module>
     </modules>
 
     <dependencies>
